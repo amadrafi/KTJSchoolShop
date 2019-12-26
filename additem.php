@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <?php include_once 'includes/dbh.inc.php' ?>
+    <link rel="stylesheet" href="/css/additem.css">
     <meta charset="utf-8">
     <title></title>
   </head>
