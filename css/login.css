@@ -21,3 +21,23 @@ h1 {
   display: sticky;
   font-family:
 }
+body {
+  margin: 0;
+  text-align: center;
+}
+h1 {
+  font-style: sans-serif;
+  width: 100%;
+  text-align: center;
+}
+a {
+  width: 100%;
+  text-align: center;
+}
+input {
+  outline: none;
+  border: 1px solid #eee;
+  width: 200px;
+  padding: 8px 8px;
+
+}

@@ -17,7 +17,7 @@
 		</div>
 		<div class="search-bar">
 			<ul id="navbar-ul">
-				<li class="nav-item"><a href="additem.php" class="nav-link">Admin</a></li>
+				<li class="nav-item"><a href="login.php" class="nav-link">Admin</a></li>
 			</ul>
 		</div>
 	</div>
