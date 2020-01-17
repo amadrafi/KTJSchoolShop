@@ -39,5 +39,29 @@ input {
   border: 1px solid #eee;
   width: 200px;
   padding: 8px 8px;
-
+}
+body {
+  margin: 0;
+  text-align: center;
+}
+h1 {
+  font-style: sans-serif;
+  width: 100%;
+  text-align: center;
+}
+a {
+  width: 100%;
+  text-align: center;
+}
+input {
+  outline: none;
+  border: 1px solid #eee;
+  width: 200px;
+  padding: 8px 8px;
+  margin-top: 50px;
+}
+.form-login {
+  width: 70%;
+  align-self: center;
+  margin-top: 50px;
 }
