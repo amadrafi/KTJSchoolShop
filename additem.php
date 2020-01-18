@@ -1,9 +1,15 @@
+<?php
+session_start();
+require 'includes/dbh.inc.php';
+?>
+<?php 
+if(isset($_SESSION['user'])&&$_SESSION['user']!=""){  //MUltiple session val better
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <?php include_once 'includes/dbh.inc.php' ?>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/additem.css">
+    <link rel="stylesheet" href="css/style.css">
   	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Quicksand:400,700" rel="stylesheet">
     <meta charset="utf-8">
     <title></title>
@@ -19,7 +25,15 @@
   	      <li class="nav-item"><a href="logout.php" class="nav-link">Log Out</a></li>
   	    </ul>
   	  </div>
-  	</div>
+    </div>
+    <div class="sidenav">
+      <div id="sidenav-container">
+        <a href="additem.php" class="sidenav-link-active">Add Item</a>
+        <a href="index-edit.php">school supplies</a>
+        <a href="attire-edit.php">attire</a>
+        <a href="sport-supplies-edit.php">sport supplies</a>
+      </div>
+    </div>
     <div class="container">
       <h2>School Supplies</h2>
       <form class="form" action="additem/additem.function.php" method="post">
@@ -45,3 +59,13 @@
     </div>
   </body>
 </html>
+<?php 
+}
+else{
+    echo '<script type="text/JavaScript">
+    window.alert("You are not logged in");
+    </script>';
+    //redirect to login page or just display message 
+    header("Location: login.php");
+}
+?>

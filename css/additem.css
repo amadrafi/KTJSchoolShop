@@ -4,8 +4,8 @@ html,body {
     padding: 0px;
     overflow-x: hidden;
 }
-body {
-    background-color: snow;
+body{
+    background-color:white !important;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -24,14 +24,21 @@ h2 {
 }
 input {
   width: 200px;
+  padding: 1vh;
+  margin: 0 10px;
+  border: 2px solid #f6f6f6;
+  border-radius: 5px
 }
 
 /* Classes */
 .form {
   text-align: center;
+  padding-bottom: 10px;
 }
 /* Classes */
 .container {
   margin-top: 150px;
   text-align: center;
+  position: relative;
+  margin-left: 220px;
 }
